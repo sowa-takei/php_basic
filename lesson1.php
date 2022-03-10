@@ -1,4 +1,5 @@
 <?php
-  $name = “Yamada”;
-   echo $name;
-?>
+$chocolate = 100;
+$candy = 50;
+$sum = $chocolate + ($candy * 3);
+echo "$sum 円です。 ";
