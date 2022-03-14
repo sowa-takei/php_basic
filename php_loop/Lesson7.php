@@ -1,10 +1,13 @@
 <?php
-for ($i =0; $i < 4; $i++) {
-    for ($j = 0; $j < 4 - ($i + 1); $j++) {
+for ($i =1; $i <= 4; $i++) {
+    for ($j = 3; $j >= $i; $j--) {
         echo  "*";
     }
-    for ($k = 0; $k < ($i + 1)*2-1; $k++) {
-        echo 1;
+    for ($k = 1; $k <= $i; $k++) {
+        echo $k;
+    }
+    for ($l = 3; $l >=6-$k; $l--) {
+        echo $l-(4-$i);
     }
     echo "<br />";
 }
