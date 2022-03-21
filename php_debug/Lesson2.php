@@ -31,12 +31,8 @@ class SelfIntroduction
     private $hobby;
 
     // コンストラクタ　
-    public function __construct(
-        string $lastName,
-        string $firstName,
-        int $age,
-        string $hobby
-    ) {
+    public function __construct($lastName, $firstName, $age, $hobby)
+    {
         $this->lastName     = $lastName;
         $this->firstName    = $firstName;
         $this->age          = $age;
@@ -51,7 +47,7 @@ class SelfIntroduction
 
     public function getAge()
     {
-        return $this->age;
+         return $this->age;
     }
 
     public function getHobby()
@@ -60,15 +56,20 @@ class SelfIntroduction
     }
 }
 
+$selfIntroduction = new SelfIntroduction($lastName, $firstName, $age, $hobby);
+$selfIntroduction -> getFullName();
+$selfIntroduction -> getAge();
+$selfIntroduction -> getHobby();
+
 if (!empty($_POST)) {
     $lastName         = $_POST["last_name"];
     $firstName        = $_POST['first_name'];
     $age              = $_POST['age'];
     $hobby            = $_POST['hobby'];
     if (!empty($selfIntroduction)) {
-        echo '私の名前は'.$selfIntroduction->getFullName().'年齢は'.$selfIntroduction->getAge().'です。';
+        echo '私の名前は'.$lastName. $firstName. '年齢は'.$age. 'です。';
         echo '<br>';
-        echo '趣味は'. $selfIntroduction->getHobby().'です。';
+        echo '趣味は'. $hobby. 'です。';
     }
 }
 ?>
