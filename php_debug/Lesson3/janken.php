@@ -60,7 +60,7 @@ if (! empty($_POST)) {
         echo '<br />';
     }
     if (! empty($enemy)) {
-        echo '相手は'.$enemy -> getChoice().'を出しました。';
+        echo "相手は".$enemy -> getChoice().'を出しました。';
         echo "<br />";
     }
     if (! empty($battle)) {
