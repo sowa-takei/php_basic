@@ -35,6 +35,7 @@ function calc($yen, $product)
         // 配列繰り返し
         foreach ($money as $val) {
             // お釣りを割ったときの整数商を返します.
+            // intdivで商を返す
             $tmp[$val] = intdiv($change, $val);
             // 9850 % 5000 = 1余り4850
             $change = $change % $val;

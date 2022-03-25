@@ -69,7 +69,7 @@ if (!empty($_POST)) {
     if (!empty($selfIntroduction)) {
         echo "私の名前は".$selfIntroduction -> getFullName(). "年齢は". $selfIntroduction -> getAge()."です。";
         echo '<br>';
-        echo '趣味は'. $selfIntroduction -> getHobby(). 'です。';
+        echo '趣味は'. $selfIntroduction -> getHobby(). "です。";
     }
 }
 ?>

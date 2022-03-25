@@ -25,6 +25,7 @@ function calc($yen, $product)
 {
     // この関数内に処理を記述
     // 金
+    // 後日自力
     $num = [10000,5000,1000,500,100,50,10,1];
     // お釣り
     $change = $yen - $product;

@@ -50,7 +50,7 @@ function nabeatsu($i)
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>世界のナベアツプログラム</title>
+<title>世界のナベアツプログラム！</title>
 </head>
 <body>
     <section>
