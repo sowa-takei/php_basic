@@ -8,7 +8,7 @@ class Me
 
     public function __construct($lastName, $firstName, $choice)
     {
-        $this -> name   = $lastName.$firstName;
+        $this -> name       = $lastName.$firstName;
         $this -> choice     = $choice;
     }
 
