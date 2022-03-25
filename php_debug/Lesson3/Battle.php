@@ -19,28 +19,27 @@ class Battle
             return '引き分け';
         }
 
-        if ($this->first == 'グー' && $this->second == 'チョキ') {
+        if ($this -> first == 'グー' && $this -> second == 'チョキ') {
             return '勝ち';
         }
 
-        if ($this->first == 'グー' && $this->second == 'パー') {
+        if ($this -> first == 'グー' && $this -> second == 'パー') {
             return '負け';
         }
 
-        if ($this->first == 'チョキ' && $this->second == 'グー') {
+        if ($this -> first == 'チョキ' && $this -> second == 'グー') {
             return '負け';
         }
 
-        if ($this->first == 'チョキ' && $this->second == 'パー') {
+        if ($this -> first == 'チョキ' && $this -> second == 'パー') {
             return '勝ち';
         }
 
-        if ($this->first == 'パー' && $this->second == 'グー') {
-            $_SESSION['result'] += 1;
+        if ($this -> first == 'パー' && $this -> second == 'グー') {
             return '勝ち';
         }
 
-        if ($this->first == 'パー' && $this->second == 'チョキ') {
+        if ($this -> first == 'パー' && $this -> second == 'チョキ') {
             return '負け';
         }
     }
@@ -58,6 +57,6 @@ class Battle
 
     public function showResult()
     {
-        return $this->judge();
+        return $this -> judge();
     }
 }

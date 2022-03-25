@@ -92,7 +92,7 @@ th, td {
                 <!-- 行頭 -->
                 <td>縦合計</td>
                 <!-- 列ごとの合計 -->
-                <?php foreach ($column_total as $column_key => $total) : ?>
+                <?php foreach ($column_total as $column_key => $total) :?>
                     <td><?php echo $total; ?></td>
                 <?php endforeach ?>
 

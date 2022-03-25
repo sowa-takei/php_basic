@@ -8,6 +8,7 @@ foreach ($array as $score) {
     } elseif ($score > 40) {
         echo "{$score}点は「可」です。<br />";
     } else {
+        // 10が該当
         echo "{$score}点は「不可」です。<br />";
     }
 }

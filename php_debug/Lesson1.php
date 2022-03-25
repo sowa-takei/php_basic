@@ -16,7 +16,7 @@ if (!empty($_POST)) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>デバック練習</title>
+    <title>デバック練習!</title>
 </head>
 <body>
 <form action = "Lesson1.php" method="POST">
