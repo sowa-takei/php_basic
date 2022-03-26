@@ -9,6 +9,7 @@ class Enemy
     // インスタンス化する時に引数受け取る
     public function __construct()
     {
+        // グーチョキパー選択してる
         $janken[1] = "グー";
         $janken[2] = "チョキ";
         $janken[3] = "パー";

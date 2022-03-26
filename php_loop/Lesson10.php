@@ -18,10 +18,12 @@ $arr = [99, 3, 12, 45, 60, 100, 31, 7, 28];
 // ↓
 // 1, 2, 3, 4←これが画面に表示される
 
+// 配列用意
 $arr = [99, 3, 12, 45, 60, 100, 31, 7, 28];
 
 // ここで並び替え処理
 // sort($arr);
+// count($arr)配列の数だけ実施
 for ($i = 0; $i < count($arr); $i++) {
     for ($n = 1; $n < count($arr); $n++) {
         if ($arr[$n - 1] > $arr[$n]) {
@@ -36,7 +38,7 @@ for ($i = 0; $i < count($arr); $i++) {
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>数字並び替えプログラム</title>
+<title>数字並び替えプログラム!</title>
 </head>
 <body>
     <?php echo implode(",", $arr); ?>
