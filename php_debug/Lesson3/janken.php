@@ -22,11 +22,9 @@ if (! isset($_SESSION['result'])) {
     $_SESSION['result'] = 0;
 }
 
-
 class Player
 {
-    // メソッドの宣言
-    // public function jankenConverter(int $choice): string
+    // メソッドの宣言する
     public function choice() :string
     {
         $choice = '';
@@ -62,7 +60,7 @@ if (! empty($_POST)) {
         echo '<br />';
     }
     if (! empty($enemy)) {
-        echo '相手は'.$enemy -> getChoice().'を出しました。';
+        echo "相手は".$enemy -> getChoice().'を出しました。';
         echo "<br />";
     }
     if (! empty($battle)) {

@@ -9,5 +9,5 @@ for ($i =1; $i <= 4; $i++) {
     for ($l = 3; $l >= 6 - $k; $l--) {
         echo $l-(4-$i);
     }
-    echo "<br />";
+    echo '<br />';
 }

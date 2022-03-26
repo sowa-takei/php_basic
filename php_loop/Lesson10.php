@@ -36,7 +36,7 @@ for ($i = 0; $i < count($arr); $i++) {
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>数字並び替えプログラム</title>
+<title>数字並び替えプログラム!</title>
 </head>
 <body>
     <?php echo implode(",", $arr); ?>
