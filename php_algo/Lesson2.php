@@ -38,6 +38,7 @@ function calc($yen, $product)
             // intdivで商を返す
             $tmp[$val] = intdiv($change, $val);
             // 9850 % 5000 = 1余り4850
+            // 4850を返す
             $change = $change % $val;
         }
         return $tmp;
