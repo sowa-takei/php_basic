@@ -1,10 +1,11 @@
 <?php
+echo "現在日時<br />";
 echo date("Y年m月d日 H時i分s")."<br />";
-echo "三日目<br />";
+echo "現在日時から３日後<br />";
 echo date("Y年m月d日 H時i分s", strtotime("+3 day"))."<br />";
-echo "12時間前<br />";
+echo "現在日時から１２時間前<br />";
 echo date("Y年m月d日 H時i分s", strtotime("-12 hour"))."<br />";
-echo "2020年元旦から現在までの日数<br />";
+echo "2020年元旦から現在までの経過日数<br />";
 // 現在の日付け取得
 $today = date("Y-m-d");
 // タイムスタンプへ変換

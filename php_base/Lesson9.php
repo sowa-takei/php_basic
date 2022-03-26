@@ -1,4 +1,5 @@
 <?php
+// 配列
 $array = array(10,60,90,70,50);
 foreach ($array as $score) {
     if ($score > 80) {
