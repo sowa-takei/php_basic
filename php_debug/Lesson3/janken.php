@@ -11,11 +11,12 @@
 
 namespace player;
 
+// 別ファイルに書かれた処理をを実行する
 require("battle.php");
 require("Enemy.php");
 require("Me.php");
 
-
+// $_SESSIONを開始する為の記述　かなり苦戦した
 session_start();
 
 if (! isset($_SESSION['result'])) {

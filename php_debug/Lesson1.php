@@ -1,7 +1,8 @@
 <?php
 // デバック練習
 // 氏名入力時に入力内容が表示されるようにプログラムを完成させてください。
-// $Lesson1 = $_POST;
+
+// empty — 変数が空であるかどうかを検査する
 if (!empty($_POST)) {
     $lastName = $_POST["last_name"];
     $firstName= $_POST["first_name"];

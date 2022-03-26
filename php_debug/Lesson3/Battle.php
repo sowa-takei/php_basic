@@ -4,7 +4,9 @@ namespace Battle;
 
 class Battle
 {
+    // 自分
     private $first;
+    // 相手
     private $second;
 
     public function __construct($me, $enemy)

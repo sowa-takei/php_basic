@@ -1,6 +1,5 @@
 <?php
 
-// クラスの上だとエラー発生する為ここに記述
 namespace php_debug\SelfIntroduction ;
 
 // デバック練習
@@ -18,8 +17,6 @@ $createAgeGroup = function () {
     }
     return $ageGroup;
 };
-
-// namespace php_debug\SelfIntroduction ;
 
 // クラスを宣言
 class SelfIntroduction
@@ -56,11 +53,13 @@ class SelfIntroduction
     }
 }
 
+// $_POST記述しないとget()できない
 $selfIntroduction = new SelfIntroduction($_POST["last_name"], $_POST['first_name'], $_POST["age"], $_POST["hobby"]);
 $selfIntroduction -> getFullName();
 $selfIntroduction -> getAge();
 $selfIntroduction -> getHobby();
 
+// empty — 変数が空であるかどうかを検査する
 if (!empty($_POST)) {
     $lastName         = $_POST["last_name"];
     $firstName        = $_POST['first_name'];
