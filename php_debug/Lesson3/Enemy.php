@@ -9,10 +9,14 @@ class Enemy
     // インスタンス化する時に引数受け取る
     public function __construct()
     {
+        // グーチョキパー選択してる
         $janken[1] = "グー";
         $janken[2] = "チョキ";
         $janken[3] = "パー";
+
+        // ランダムナ数字を代入
         $r = random_int(1, 3);
+
         return $this -> choice = $janken[$r];
         // $this->choice = random_int(1, 3);
     }

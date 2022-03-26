@@ -11,22 +11,21 @@
 
 namespace player;
 
+// 別ファイルに書かれた処理をを実行する
 require("battle.php");
 require("Enemy.php");
 require("Me.php");
 
-
+// $_SESSIONを開始する為の記述　かなり苦戦した
 session_start();
 
 if (! isset($_SESSION['result'])) {
     $_SESSION['result'] = 0;
 }
 
-
 class Player
 {
-    // メソッドの宣言
-    // public function jankenConverter(int $choice): string
+    // メソッドの宣言する
     public function choice() :string
     {
         $choice = '';
@@ -62,7 +61,7 @@ if (! empty($_POST)) {
         echo '<br />';
     }
     if (! empty($enemy)) {
-        echo '相手は'.$enemy -> getChoice().'を出しました。';
+        echo "相手は".$enemy -> getChoice().'を出しました。';
         echo "<br />";
     }
     if (! empty($battle)) {

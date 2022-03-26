@@ -30,6 +30,7 @@ function nabeatsu($i)
 {
     // この関数内に処理を記述
     for ($i = 1; $i <= 100; $i++) {
+        // 3と5で割れる数字を表示
         if (($i % 3 == 0) && ($i % 5 == 0)) {
             echo $i."アホわん";
             echo "<br />";
@@ -50,7 +51,7 @@ function nabeatsu($i)
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>世界のナベアツプログラム</title>
+<title>世界のナベアツプログラム！</title>
 </head>
 <body>
     <section>
