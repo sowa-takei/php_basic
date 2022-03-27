@@ -13,6 +13,7 @@
  *  ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
  */
 
+// 配列用意
 $arr = [
     'r1' => ['c1' => 10, 'c2' => 5, 'c3' => 20],
     'r2' => ['c1' => 7, 'c2' => 8, 'c3' => 12],
@@ -92,7 +93,7 @@ th, td {
                 <!-- 行頭 -->
                 <td>縦合計</td>
                 <!-- 列ごとの合計 -->
-                <?php foreach ($column_total as $column_key => $total) : ?>
+                <?php foreach ($column_total as $column_key => $total) :?>
                     <td><?php echo $total; ?></td>
                 <?php endforeach ?>
 
